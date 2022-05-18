@@ -1,0 +1,8 @@
+{
+  "h1": "דוגמה פשוטה",
+  "change-locale": "שנה מקום",
+  "to-second-page": "לעמוד השני",
+  "error-with-status": "התרחשה שגיאה עם קוד {{statusCode}} על השרת",
+  "error-without-status": "התרחשה שגיאה על השרת",
+  "title": "עמוד הבית | next-i18next"
+}
