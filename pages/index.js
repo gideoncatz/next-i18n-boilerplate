@@ -13,7 +13,12 @@ const Homepage = () => {
   const { t } = useTranslation('common')
 
   const getNextLocale = () => {
-    const nextLocaleIndex = (router.locales.indexOf(router.locale) + 1) % router.locales.length
+    let nextLocaleIndex = (router.locales.indexOf(router.locale) + 1) % router.locales.length
+
+    // Avoiding the locale to be set to 'default' which is only a technical locale value for explicit locale prefixing
+    if (nextLocaleIndex === 0) {
+      nextLocaleIndex++;
+    }
     return router.locales[nextLocaleIndex]
   }
 

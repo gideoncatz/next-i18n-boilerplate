@@ -1,4 +1,3 @@
-import { version } from 'next-i18next/package.json'
 import { useTranslation } from 'next-i18next'
 
 export const Footer = () => {
@@ -11,8 +10,7 @@ export const Footer = () => {
         {t('description')}
       </p>
       <p>
-        next-i18next v
-        {version}
+        next-i18next
       </p>
     </footer>
   )
